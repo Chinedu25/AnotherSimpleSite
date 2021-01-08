@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monst";
+}
+
+@font-face {
+  src: url(Font/montserrat/Montserrat-Medium.ttf) format("truetype");
+  font-family: "Monst";
+}
+
+@font-face {
+  src: url(Font/Poppins/Poppins-Medium.ttf) format("truetype");
+  font-family: "Pops";
+}
+
+button {
+  font-family: "Pops";
+}
+
+header {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: 10vh;
+  align-items: center;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo-container img {
+  filter: sepia(100%);
+}
+
+nav {
+  flex: 2;
+}
+
+.cart {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-weight: 400;
+  margin: 5px;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link a {
+  color: #555;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.presentation {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.introduction {
+  flex: 1;
+}
+
+.Introtext h1 {
+  font-size: 30px;
+  font-weight: 500px;
+  background: linear-gradient(to right, #323038, #c6c7c8, #605e66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Introtext p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #585858;
+}
+.call-to-action {
+  padding: 50px 0px 0px 0px;
+}
+
+.cta-select {
+  border: 2px solid #aca8bc;
+  background: transparent;
+  color: #aca8bc;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cta-add {
+  border: none;
+  background: #aca8bc;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 30px 0 0 30px;
+}
+
+.Image-Cover {
+  flex: 1;
+}
+
+.Image-cover img {
+  height: 60vh;
+  filter: drop-shadow(0px 5px 3px black);
+}
+
+.big-circle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 500px;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+.medium-circle {
+  position: absolute;
+  top: 30%;
+  right: 37%;
+  width: 350px;
+  z-index: -2;
+  opacity: 0.15;
+}
+
+.small-circle {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 250px;
+  z-index: -3;
+  opacity: 0.05;
+}
